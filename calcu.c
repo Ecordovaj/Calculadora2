@@ -77,7 +77,7 @@ LRESULT CALLBACK ProcediementoVentana(HWND hwnd,UINT msg, WPARAM wParam,LPARAM l
                 case WM_COMMAND:{
                    switch(LOWORD(wParam)){
                         case ID_BTNSALIR:{
-                            if(MessageBox(hwnd,"¿Desea salir del programa?","Salir.",MB_OKCANCEL|MB_ICONQUESTION)==IDOK){
+                            if(MessageBox(hwnd,"Â¿Desea salir del programa?","Salir.",MB_OKCANCEL|MB_ICONQUESTION)==IDOK){
                                 SendMessage(hwnd,WM_DESTROY,0,0);
                             }
                             break;
